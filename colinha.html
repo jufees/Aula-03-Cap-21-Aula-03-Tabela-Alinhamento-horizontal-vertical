@@ -3,70 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-</head>
-<meta charset="UTF-8">
 
-<style>
+     <style>
 
-    body { 
-        font-family: Arial, Helvetica, sans-serif; 
-    }
-    
-    table {
-        border-collapse: collapse;
-        width: 50%;
-
-    }
-
-    td {
-        border: 1px solid #ccc;
-        padding: 8px;
-    }
-
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-style: italic;
   
-    .esquerda-vertical {
-         text-align: left; }
+}
 
-    .centro { 
-        text-align: center; }
+table {
+    border: 1px solid rgb(43, 116, 158);
+    border-spacing: 0px;
+    
+}
 
-    .direita {
-         text-align: right; }
+table td {
+    border: 1px solid rgb(43, 116, 158);
+    padding: 8px;
+}
 
-</style>
+.texto-esquerda {
+    text-align: left;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+.texto-direita {
+    text-align: right;
+}
+
+.texto-acima {
+    vertical-align: top;
+    text-align: center;
+}
+
+.texto-abaixo{
+    vertical-align: bottom;
+    text-align: center;
+}
+
+caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-style: Arial;
+}
+
+span {
+    display: block;
+    float: right;
+}
+
+     </style>
+
+
 </head>
 
 <body>
 
-    <h1>Gabarito - Trabalhando com alinhamento</h1>
+     <h1 style="color: rgb(20, 28, 32);">Gabarito - Trabalhando com alinhamento</h1>
 
-<table>
+    <table style="background-image: url('https://i.pinimg.com/736x/27/b4/94/27b4948a96d7cb4e5bb8552e839b50ec.jpg'); background-size: cover; background-position: center;">
 
-<tr>
-    <td class=".esquerda-vertical">A1</td>
-    <td>B1</td>
-    <td>C1</td>
-</tr> 
+      <caption>Tabela de Alinhamento <span>:D</span></caption>
+        <tbody>
 
-<tr class="linha">
-    <td>A2</td>
-    <td>B2</td>
-    <td class="numero">C2</td>
-</tr>
+            <tr style="height: 72px;">
+                <td class="texto-esquerda" style="background-color: rgb(42, 56, 70); width: 120px;">A1<br>(esquerda)</td>
+                <td class="texto-centro" style="width: 180px;">B1<br>(padrão centro)</td>
+                <td class="texto-direita" style="background-color: rgb(51, 94, 88); width: 120px;">C1<br>(direita)</td>
+            </tr>
 
-<tr>
-    <td>A3</td>
-    <td>B3</td>
-    <td class="numero">C3</td>
-</tr>
-<tr>
+             <tr style="height: 120px;">
+                <td class="texto-acima" style="width: 120px;">A2<br>(topo)</td>
+                <td class="texto-centro" style="width: 180px; background-color: rgb(118, 96, 180);">B2<br>(padrão)</td>
+                <td class="texto-abaixo" style="width: 120px;">C2<br>(baixo)</td>
+            </tr>
 
-    <td>A4</td>
-    <td class="dado">B4</td>
-    <td>C4</td>
-</tr>
 
-</table>
+             <tr style="height: 120px;">
+                <td class="texto-acima" style="background-color: rgb(71, 53, 46); width: 120px;">A3<br>(topo)</td>
+                <td class="texto-abaixo" style="width: 180px;">B3<br>(baixo)</td>
+                <td class="texto-centro" style="background-color: rgb(70, 49, 69); width: 120px;">C3<br>(padrão)</td>
+            </tr>
 
+            <tr style="height: 70px;">
+                <td class="texto-centro"style="width: 120px;">A4</td>
+                <td class="texto-direita" style="background-color: rgb(22, 58, 53); width: 180px;">1000<br>(número à direita)</td>
+                <td class="texto-centro" style="width: 120px;">C4</td>
+            </tr>
+
+        </tbody>
+
+    </table>
 </body>
 </html>
